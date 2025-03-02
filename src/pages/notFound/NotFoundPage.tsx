@@ -1,7 +1,7 @@
-import Text from "@landing/common/components/Text.tsx";
-import Flex from "@landing/common/components/Flex.tsx";
 import styled from "styled-components";
 import {useNavigate} from "react-router";
+import Flex from "../../common/components/Flex.tsx";
+import Text from "../../common/components/Text.tsx";
 
 export default function NotFoundPage() {
 

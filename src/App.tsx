@@ -1,7 +1,7 @@
-import RootRouter from "@landing/routers/RootRouter.tsx";
+import RootRouter from "./routers/RootRouter.tsx";
 
 function App() {
-    return <RootRouter/>;
+    return <RootRouter/>
 }
 
 export default App
