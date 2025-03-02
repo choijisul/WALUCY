@@ -1,0 +1,22 @@
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  width: 100dvw;
+  height: 100dvh;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  word-break: keep-all;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: NanumSquareRoundOTF;
+}
