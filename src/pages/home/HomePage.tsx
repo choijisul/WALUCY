@@ -1,23 +1,26 @@
 import Flex from "../../common/components/Flex.tsx";
 import Text from "../../common/components/Text.tsx";
 import styled from "styled-components";
+import useUserInfo from "../../common/hooks/useUserInfo.ts";
 
 export default function HomePage() {
+    const {id, favorite, joinDate} = useUserInfo();
+
     return <Background width="100%" height="100%" center>
         <ConTents gap={60} row center>
             <Flex gap={40}>
                 <Flex gap={40} row>
                     <ProfileImg/>
                     <Flex spaceBetween style={{padding: "10px 0"}}>
-                        <Text fontSize={32} fontWeight={600}>닉네임</Text>
+                        <Text fontSize={32} fontWeight={600}>{id}</Text>
                         <Flex gap={10}>
                             <Flex gap={2}>
                                 <Text fontSize={12} fontWeight={400}>최애</Text>
-                                <Text fontSize={18} fontWeight={400}>조원상</Text>
+                                <Text fontSize={18} fontWeight={400}>{favorite}</Text>
                             </Flex>
                             <Flex gap={2}>
                                 <Text fontSize={12} fontWeight={400}>가입일</Text>
-                                <Text fontSize={18} fontWeight={400}>2024.08.10</Text>
+                                <Text fontSize={18} fontWeight={400}>{joinDate}</Text>
                             </Flex>
                         </Flex>
                     </Flex>
