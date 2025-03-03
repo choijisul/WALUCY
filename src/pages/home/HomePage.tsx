@@ -20,8 +20,8 @@ export default function HomePage() {
                                 <Text fontSize={18} fontWeight={400}>2024.08.10</Text>
                             </Flex>
                             <Flex gap={2}>
-                                <Text fontSize={12} fontWeight={400}>팬이된지</Text>
-                                <Text fontSize={18} fontWeight={400}>26일차</Text>
+                                <Text fontSize={12} fontWeight={400}>팬이 된 지</Text>
+                                <Text fontSize={18} fontWeight={400}>26일 차</Text>
                             </Flex>
                         </Flex>
                     </Flex>
@@ -47,33 +47,90 @@ export default function HomePage() {
                     <img src="/assets/img/home/setting-icon.svg" height={36} style={{cursor: "pointer"}}/>
                 </Flex>
             </Flex>
-            <Post gap={20}>
+            <Flex  gap={20}>
                 <Text fontSize={16} fontWeight={600}>내가 쓴 글</Text>
-                <Flex gap={10}>
-                    <MyPost row gap={18} verticalCenter>
-                        <PostImg/>
-                        <Flex gap={10}>
-                            <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
-                            <Flex row gap={12}>
-                                <Text fontSize={12} fontWeight={400}>#광일</Text>
-                                <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
-                                <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                <Post>
+                    <Flex gap={10} style={{marginRight: 8}}>
+                        <MyPost row gap={18} verticalCenter>
+                            <PostImg/>
+                            <Flex gap={10}>
+                                <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
+                                <Flex row gap={12}>
+                                    <Text fontSize={12} fontWeight={400}>#광일</Text>
+                                    <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
+                                    <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                                </Flex>
                             </Flex>
-                        </Flex>
-                    </MyPost>
-                    <MyPost row gap={18} verticalCenter>
-                        <PostImg/>
-                        <Flex gap={10}>
-                            <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
-                            <Flex row gap={12}>
-                                <Text fontSize={12} fontWeight={400}>#광일</Text>
-                                <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
-                                <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                        </MyPost>
+                        <MyPost row gap={18} verticalCenter>
+                            <PostImg/>
+                            <Flex gap={10}>
+                                <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
+                                <Flex row gap={12}>
+                                    <Text fontSize={12} fontWeight={400}>#광일</Text>
+                                    <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
+                                    <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                                </Flex>
                             </Flex>
-                        </Flex>
-                    </MyPost>
-                </Flex>
-            </Post>
+                        </MyPost>
+                        <MyPost row gap={18} verticalCenter>
+                            <PostImg/>
+                            <Flex gap={10}>
+                                <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
+                                <Flex row gap={12}>
+                                    <Text fontSize={12} fontWeight={400}>#광일</Text>
+                                    <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
+                                    <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                                </Flex>
+                            </Flex>
+                        </MyPost>
+                        <MyPost row gap={18} verticalCenter>
+                            <PostImg/>
+                            <Flex gap={10}>
+                                <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
+                                <Flex row gap={12}>
+                                    <Text fontSize={12} fontWeight={400}>#광일</Text>
+                                    <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
+                                    <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                                </Flex>
+                            </Flex>
+                        </MyPost>
+                        <MyPost row gap={18} verticalCenter>
+                            <PostImg/>
+                            <Flex gap={10}>
+                                <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
+                                <Flex row gap={12}>
+                                    <Text fontSize={12} fontWeight={400}>#광일</Text>
+                                    <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
+                                    <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                                </Flex>
+                            </Flex>
+                        </MyPost>
+                        <MyPost row gap={18} verticalCenter>
+                            <PostImg/>
+                            <Flex gap={10}>
+                                <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
+                                <Flex row gap={12}>
+                                    <Text fontSize={12} fontWeight={400}>#광일</Text>
+                                    <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
+                                    <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                                </Flex>
+                            </Flex>
+                        </MyPost>
+                        <MyPost row gap={18} verticalCenter>
+                            <PostImg/>
+                            <Flex gap={10}>
+                                <Text fontSize={16} fontWeight={600}>오늘자 루시트콤</Text>
+                                <Flex row gap={12}>
+                                    <Text fontSize={12} fontWeight={400}>#광일</Text>
+                                    <Text fontSize={12} fontWeight={400}>#루시트콤</Text>
+                                    <Text fontSize={12} fontWeight={400}>#레전드</Text>
+                                </Flex>
+                            </Flex>
+                        </MyPost>
+                    </Flex>
+                </Post>
+            </Flex>
         </ConTents>
     </Background>
 }
@@ -108,9 +165,20 @@ const SongTitle = styled(Flex)`
 `;
 
 const Post = styled(Flex)`
-    height: 454px;
+    height: 415px;
     overflow-x: hidden;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        margin-right: 10px;
+        width: 6px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #3F7ED4;
+        border-radius: 6px;
+    }
 `;
 
 const MyPost = styled(Flex)`
