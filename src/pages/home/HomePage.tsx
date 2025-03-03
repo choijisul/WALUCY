@@ -19,10 +19,6 @@ export default function HomePage() {
                                 <Text fontSize={12} fontWeight={400}>가입일</Text>
                                 <Text fontSize={18} fontWeight={400}>2024.08.10</Text>
                             </Flex>
-                            <Flex gap={2}>
-                                <Text fontSize={12} fontWeight={400}>팬이 된 지</Text>
-                                <Text fontSize={18} fontWeight={400}>26일 차</Text>
-                            </Flex>
                         </Flex>
                     </Flex>
                 </Flex>
