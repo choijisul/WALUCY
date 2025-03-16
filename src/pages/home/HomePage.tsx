@@ -2,9 +2,11 @@ import Flex from "../../common/components/Flex.tsx";
 import Text from "../../common/components/Text.tsx";
 import styled from "styled-components";
 import useUserInfo from "../../common/hooks/useUserInfo.ts";
+import {useNavigate} from "react-router";
 
 export default function HomePage() {
     const {id, favorite, joinDate} = useUserInfo();
+    const navigate = useNavigate();
 
     return <Background width="100%" height="100%" center>
         <ConTents gap={60} row center>
@@ -43,7 +45,9 @@ export default function HomePage() {
                             <Text fontSize={14} fontWeight={400}>가장 좋아하는 앨범</Text>
                         </Flex>
                     </Flex>
-                    <img src="/assets/img/home/setting-icon.svg" height={36} style={{cursor: "pointer"}}/>
+                    <img src="/assets/img/home/setting-icon.svg" height={36}
+                         style={{cursor: "pointer"}}
+                    onClick={() => navigate("/setting")}/>
                 </Flex>
             </Flex>
             <Flex  gap={20}>
